@@ -9,59 +9,59 @@
   <title>Frontend Mentor | QR code component</title>
 
   <style>
+    @import url("https://fonts.google.com/specimen/Outfit");
     body {
       background-color: #d5e1ef;
     }
-    /* h1   {color: blue;}
-        p    {color: red;} */
-    div {
-      width: 220px;
-      height: 340px;
-      overflow: hidden;
+  
+    main{
+      width: 350px;
+      height: 550px;
       background: #fff;
-      border-radius: 14px;
-      transition: height 0.2s ease;
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 100px;
-      margin-bottom: auto;
+      border-radius: 20px;
+      position: absolute;   
+      left: 50%;           
+      top: 50%;                       
+      transform: translate(-50%, -50%) 
     }
     img {
       display: block;
+      height: 320px;
+      width: 340;
       margin-left: auto;
       margin-right: auto;
       margin-top: 10px;
-      border-radius: 11px;
-      transition: height 0.2s ease;
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-      height: 200px;
-      width: 200;
+      border-radius: 10px;
     }
 
-    p.first{
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        color: #000058;
-        font-size: 16px;
+    .first{
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
         text-align: center;
+        color: hsl(218, 44%, 22%);
+        margin: 30px 15px 25px 15px;
     }
 
-    p.second{
+    .second{
         font-family: Arial, sans-serif;
         color: #A9A9A9;
-        font-size: 12.3px;
+        font-size: 16px;
         text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        line-height: 1.4;
+        font-weight: 400;
     }
 
   </style>
   <body>
-    <div>
+    <main>
         <img src="images/image-qr-code.png" class="center">
-        <p class="first">Improve your front-end skills by building projects 
-        </p>
+        <h1 class="first">Improve your front-end skills by building projects 
+        </h1>
         <p class="second">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </div>
+      </main>
 
     <!-- <img src="images/image-qr-code.png" class="center"> -->
   </body>
